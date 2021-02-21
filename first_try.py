@@ -8,10 +8,10 @@ arr[0] = last
 
 
 def replace_first(array):
-    if len(arr) <=1:
+    if len(array) <=1:
         return array
     else:
-        array.append(arr[0])
+        array.append(array[0])
         array.pop(0)
         return array
 
