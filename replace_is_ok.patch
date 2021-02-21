@@ -1,0 +1,29 @@
+Index: first_try.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- first_try.py	(revision 2e92a28f47cba9b048d084543b82585c7b61c28e)
++++ first_try.py	(date 1613909836925)
+@@ -1,2 +1,18 @@
+-print('Hello')
+-print('hi')
+\ No newline at end of file
++arr = [1, 2, 3, 4]
++
++'''
++last = arr[-1]
++arr[-1]=arr[0]
++arr[0] = last
++'''
++
++
++def replace_first(array):
++    if len(arr) <=1:
++        return array
++    else:
++        array.append(arr[0])
++        array.pop(0)
++        return array
++
++replace_first(arr)
